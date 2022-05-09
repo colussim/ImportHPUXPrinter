@@ -1,0 +1,11 @@
+{
+
+    "FilePhysical" : "PhyPrinterList.csv",
+    "FileLogical": "LogPrinterList.csv",
+    "Template":"template.sh",
+    "Fprinter":"/usr/lib/cups/backend/",
+    "Description" :" MAGELLAN-"
+
+
+
+}
