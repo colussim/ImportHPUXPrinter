@@ -2,4 +2,4 @@
 
 
 # ImportHPUXPrinter
-Import HPUX Printer in CUPS Linux Spooler
+This is a simple application to import HP-UX Printer in CUPS Linux Spooler
