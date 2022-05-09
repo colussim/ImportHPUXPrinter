@@ -11,6 +11,13 @@ Before you get started, you’ll need to have these things:
 * [Go language installed](https://go.dev/) on Linux server
 * Git installed on Linux server
 
+The repository contains the following files:
+* HPUX/CreateListPrinter.sh : script to capture physical and logical printers under HP-UX 
+* src/SetPrinter.go : source of the go script
+* SetPrinter : binary of the go script
+* config.json : configuration file of the script
+* template.sh: backend template file
+
 ## Initial setup
 
 Clone the repository :
