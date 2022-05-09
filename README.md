@@ -45,9 +45,7 @@ On HP-UX server run the script :
 [root@bandol HPUX]./CreateListPrinter.sh
 ```
 This script generates two files in csv format:
-
-    * PhyPrinterList.csv
-    
-    * LogPrinterList.csv
+* PhyPrinterList.csv
+* LogPrinterList.csv
     
 dd
