@@ -20,3 +20,20 @@ Clone the repository :
 ```
 
 Copy the HPUX directory to the HP-UX server
+
+# Setup RepMonitorWebHook
+
+You will find 1 configuration files :
+
+**config.json** : configuration file with the following parameters:
+```json
+{
+
+    "FilePhysical" : "PhyPrinterList.csv",  Name of the file containing the names and ip addresses of the physical printers
+    "FileLogical": "LogPrinterList.csv",    Name of the file containing the names of the logical printers
+    "Template":"template.sh",               Name of the template file for the definition of the backends
+    "Fprinter":"/usr/lib/cups/backend/",    Directory where the backends are stored
+    "Description" :" MAGELLAN-"             Description added when creating the printer 
+
+}
+```
