@@ -55,6 +55,6 @@ On Linux server run the script :
 [archi@mercure ImportHPUXPrinter]sudo ./SetPrinter
 ```
 This script reads: 
-- the PhyPrinterList.csv and LogPrinterList.csv files 
+- the **PhyPrinterList.csv** and **LogPrinterList.csv** files 
 - creates the printers backend files 
 - adds the logical printers if they exist as well as the physical printers
