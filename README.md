@@ -48,4 +48,13 @@ This script generates two files in csv format:
 * PhyPrinterList.csv
 * LogPrinterList.csv
     
-dd
+Copy these two files into the directory of the Linux server where the repository was cloned.
+
+On Linux server run the script :
+```bash
+[archi@mercure ImportHPUXPrinter]sudo ./SetPrinter
+```
+This script reads: 
+- the PhyPrinterList.csv and LogPrinterList.csv files 
+- creates the printers backend files 
+- adds the logical printers if they exist as well as the physical printers
