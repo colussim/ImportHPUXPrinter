@@ -21,7 +21,7 @@ Clone the repository :
 
 Copy the HPUX directory to the HP-UX server
 
-# Setup RepMonitorWebHook
+## Setup
 
 You will find 1 configuration files :
 
@@ -37,3 +37,13 @@ You will find 1 configuration files :
 
 }
 ```
+
+## Usage
+
+On HP-UX server run the script :
+```bash
+[root@bandol HPUX]./CreateListPrinter.sh
+```
+This script generates two files in csv format:
+    * PhyPrinterList.csv
+	* LogPrinterList.csv
