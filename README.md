@@ -23,7 +23,7 @@ The repository contains the following files:
 Clone the repository :
 
 ```
-#:> git clone https://github.com/colussim/ImportHPUXPrinter.git
+[archi@mercure] git clone https://github.com/colussim/ImportHPUXPrinter.git
 ```
 
 Copy the HPUX directory to the HP-UX server
