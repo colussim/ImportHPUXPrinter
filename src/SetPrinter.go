@@ -25,6 +25,7 @@ import (
 	"os"
 	"os/exec"
 	"regexp"
+	"strings"
 )
 
 // Declare a struct for Config fields
@@ -104,7 +105,10 @@ func sys_cmd(cmd1 string, Printer string) {
 		log.Printf("⇨ Printer Add in CUPS Spooler : %s\n", Printer)
 	}
 }
-
+// Func  Delete Space in string Soket
+func standardizeSpaces(s string) string {
+	return strings.Join(strings.Fields(s), "")
+}
 /* ------------------------------ Main ------------------------------*/
 
 func main() {
@@ -206,7 +210,8 @@ func main() {
 		for i := 0; i < sizehw; i++ {
 
 			Newvalue := "PRINTER=" + ImpPrinter[i].IPprinter
-			Socket := ImpPrinter[i].IPprinter + ":9100"
+			Socket1 := ImpPrinter[i].IPprinter + ":9100"
+			Socket := standardizeSpaces(Socket1)
 			result := searchRegexp.ReplaceAllString(data1, Newvalue)
 
 			Fprinter1 := AppConfig.Fprinter + ImpPrinter[i].PhyName
