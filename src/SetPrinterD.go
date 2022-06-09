@@ -99,6 +99,7 @@ func sys_cmd(cmd1 string, Printer string) {
 	_, err := cmd.Output()
 	if err != nil {
 		log.Printf("⇨  error occured : %s", err)
+		log.Printf("⇨  error CMD : %s", cmd1)
 		os.Exit(1)
 	} else {
 		log.Printf("⇨ Printer Add in CUPS Spooler : %s\n", Printer)
@@ -220,14 +221,14 @@ func main() {
 			if NbrLogic > 0 {
 				for nbr := 0; nbr < NbrLogic; nbr++ {
 					CMD = CMD + "sudo /usr/sbin/lpadmin -p " + ImpPrinter[i].LogName[nbr] + " -E -v socket://" + Socket + " -D MAGELLAN-" + Hname + ";"
-					//sys_cmd(CMD, ImpPrinter[i].LogName[nbr])
-					log.Println("⇨ Show CMD1: ", CMD)
+					sys_cmd(CMD, ImpPrinter[i].LogName[nbr])
+				//	log.Println("⇨ Show CMD1: ", CMD)
 
 				}
 			} else {
 				CMD = CMD + "sudo /usr/sbin/lpadmin -p " + ImpPrinter[i].PhyName + " -E -v socket://" + Socket + " -D " + Description + ";"
-				log.Println("⇨ Show CMD2: \n", CMD)
-				//	sys_cmd(CMD, ImpPrinter[i].PhyName)
+				//log.Println("⇨ Show CMD2: \n", CMD)
+				sys_cmd(CMD, ImpPrinter[i].PhyName)
 			}
 
 		}
