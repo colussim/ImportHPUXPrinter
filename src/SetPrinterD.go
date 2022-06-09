@@ -214,7 +214,7 @@ func main() {
 				log.Println(err)
 				os.Exit(1)
 			}
-			log.Println("⇨ Printer backend created : ", ImpPrinter[i].PhyName)
+			log.Println("⇨ Printer backend created : \n", ImpPrinter[i].PhyName)
 
 			NbrLogic := len(ImpPrinter[i].LogName)
 			if NbrLogic > 0 {
@@ -226,7 +226,7 @@ func main() {
 				}
 			} else {
 				CMD = CMD + "sudo /usr/sbin/lpadmin -p " + ImpPrinter[i].PhyName + " -E -v socket://" + Socket + " -D " + Description + ";"
-				log.Println("⇨ Show CMD2: ", CMD)
+				log.Println("⇨ Show CMD2: \n", CMD)
 				//	sys_cmd(CMD, ImpPrinter[i].PhyName)
 			}
 
